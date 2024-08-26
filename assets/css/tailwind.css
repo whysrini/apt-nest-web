@@ -1105,6 +1105,9 @@ video {
       -ms-flex-pack: justify !important;
           justify-content: space-between !important;
 }
+.gap-2{
+  gap: 0.5rem !important;
+}
 .gap-3{
   gap: 0.75rem !important;
 }
@@ -1323,9 +1326,6 @@ video {
 }
 .text-center{
   text-align: center !important;
-}
-.text-right{
-  text-align: right !important;
 }
 .text-start{
   text-align: start !important;
@@ -2692,6 +2692,11 @@ html[dir=rtl] .tns-visually-hidden {
   }
   .md\:grid-cols-6{
     grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+  }
+  .md\:justify-end{
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: flex-end !important;
   }
   .md\:py-24{
     padding-top: 6rem !important;
