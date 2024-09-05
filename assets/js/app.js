@@ -7,7 +7,19 @@
    File Description: Main JS file of the template
 */
 
+document.querySelectorAll("a[data-id]").forEach(anchor => {
+    anchor.addEventListener("click", (e) => {
+        e.preventDefault();
+        const headerHeight = document.getElementById("navbar").offsetHeight;
+        const targetId = anchor.getAttribute("data-id");
+        const targetElement = document.querySelector(targetId);
 
+        window.scrollTo({
+            top: targetElement.offsetTop - headerHeight,
+            behavior: "smooth"
+        });
+    });
+});
 /*********************************/
 /*         INDEX                 */
 /*================================
