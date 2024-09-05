@@ -2210,6 +2210,10 @@ html[dir=rtl] .tns-visually-hidden {
   color: #00558C;
 }
 
+.theme-logo-shadow-white {
+  text-shadow: 0 0 2px white;
+}
+
 .before\:absolute::before{
   content: var(--tw-content) !important;
   position: absolute !important;
