@@ -771,6 +771,10 @@ video {
   margin-left: auto !important;
   margin-right: auto !important;
 }
+.my-5{
+  margin-top: 1.25rem !important;
+  margin-bottom: 1.25rem !important;
+}
 .my-6{
   margin-top: 1.5rem !important;
   margin-bottom: 1.5rem !important;
