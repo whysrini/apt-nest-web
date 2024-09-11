@@ -1,0 +1,14 @@
+{
+  "activitycontinuation": {
+    "apps": [ "79XVBBZ78N.com.lexiot.aptnest" ]
+  },
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "79XVBBZ78N.com.lexiot.aptnest",
+        "paths": [ "*", "/*" ]
+      }
+    ]
+  }
+}
