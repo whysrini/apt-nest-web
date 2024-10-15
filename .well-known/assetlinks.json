@@ -1,5 +1,15 @@
-[{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target" : { "namespace": "android_app", "package_name": "com.lexiot.aptnest",
-    "sha256_cert_fingerprints": ["BB:39:E8:B2:44:9F:C5:BC:08:F3:06:58:6C:84:66:AF:D4:C4:AF:A5:62:13:DE:01:C7:37:14:35:1B:58:5E:0B"] }
-}]
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.lexiot.aptnest",
+      "sha256_cert_fingerprints": [
+        "BB:39:E8:B2:44:9F:C5:BC:08:F3:06:58:6C:84:66:AF:D4:C4:AF:A5:62:13:DE:01:C7:37:14:35:1B:58:5E:0B",
+        "45:AD:4D:52:87:9D:F5:3E:DF:E4:A5:63:85:38:41:04:17:FD:E7:26:A8:F1:56:4F:3C:18:74:E5:0E:61:0D:4B"
+      ]
+    }
+  }
+]
