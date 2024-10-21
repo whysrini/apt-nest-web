@@ -771,6 +771,10 @@ video {
   margin-left: auto !important;
   margin-right: auto !important;
 }
+.my-2{
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
 .my-5{
   margin-top: 1.25rem !important;
   margin-bottom: 1.25rem !important;
@@ -1461,6 +1465,10 @@ video {
 .text-black{
   --tw-text-opacity: 1 !important;
   color: rgb(0 0 0 / var(--tw-text-opacity)) !important;
+}
+.text-blue-500{
+  --tw-text-opacity: 1 !important;
+  color: rgb(59 130 246 / var(--tw-text-opacity)) !important;
 }
 .text-gray-400{
   --tw-text-opacity: 1 !important;
@@ -3033,6 +3041,9 @@ html[dir=rtl] .tns-visually-hidden {
   .lg\:text-6xl{
     font-size: 3.75rem !important;
     line-height: 1 !important;
+  }
+  .lg\:text-\[30px\]{
+    font-size: 30px !important;
   }
   .lg\:text-\[44px\]{
     font-size: 44px !important;
