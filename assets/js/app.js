@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const os = detectOS();
     if(os === "iOS" || os === "Android") {
         [].forEach.call(document.querySelectorAll('.web-qr-code'), function (el) {
-            el.classList.remove('flex');
+            el.classList.remove('inline-block');
             el.classList.add('hidden');
         });
         document.getElementById('apt-nest-qr-code').classList.remove('hidden');
@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     else{
         [].forEach.call(document.querySelectorAll('.web-qr-code'), function (el) {
-            el.classList.add('flex');
+            el.classList.add('inline-block');
             el.classList.remove('hidden');
         });
         document.getElementById('apt-nest-qr-code').classList.remove('flex');
