@@ -27,20 +27,22 @@ document.querySelectorAll("a[data-id]").forEach(anchor => {
  *     02.  Menus                *
  *     03.  Back to top          *
  ================================*/
- window.addEventListener('load', fn, false)
+window.addEventListener('load', fn, false)
 
- //  window.onload = function loader() {
- function fn() {
-     // Preloader
-     if (document.getElementById('preloader')) {
-         setTimeout(() => {
-             document.getElementById('preloader').style.visibility = 'hidden';
-             document.getElementById('preloader').style.opacity = '0';
-         }, 350);
-     }
- }
+//  window.onload = function loader() {
+function fn() {
+    // Preloader
+    if (document.getElementById('preloader')) {
+        setTimeout(() => {
+            document.getElementById('preloader').style.visibility = 'hidden';
+            document.getElementById('preloader').style.opacity = '0';
+        }, 350);
+    }
+}
+
 /*********************/
 /*     Menus         */
+
 /*********************/
 
 function windowScroll() {
@@ -69,7 +71,7 @@ try {
         offset: 80
     });
 } catch (error) {
-    
+
 }
 
 
@@ -80,7 +82,7 @@ try {
         offset: 80
     });
 } catch (error) {
-    
+
 }
 
 // Menu Collapse
@@ -93,6 +95,18 @@ const toggleCollapse = (elementId, show = true) => {
     }
 }
 
+const detectOS = () => {
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    if (/android/i.test(userAgent)) {
+        return "Android";
+    }
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        return "iOS";
+    }
+    return "unknown";
+};
+
 document.addEventListener('DOMContentLoaded', () => {
     // Toggle target elements using [data-collapse]
     document.querySelectorAll('[data-collapse]').forEach(function (collapseToggleEl) {
@@ -102,6 +116,25 @@ document.addEventListener('DOMContentLoaded', () => {
             toggleCollapse(collapseId, document.getElementById(collapseId).classList.contains('hidden'));
         });
     });
+
+    const os = detectOS();
+    if(os === "iOS" || os === "Android") {
+        [].forEach.call(document.querySelectorAll('.web-qr-code'), function (el) {
+            el.classList.remove('flex');
+            el.classList.add('hidden');
+        });
+        document.getElementById('apt-nest-qr-code').classList.remove('hidden');
+        document.getElementById('apt-nest-qr-code').classList.add('flex');
+    }
+    else{
+        [].forEach.call(document.querySelectorAll('.web-qr-code'), function (el) {
+            el.classList.add('flex');
+            el.classList.remove('hidden');
+        });
+        document.getElementById('apt-nest-qr-code').classList.remove('flex');
+        document.getElementById('apt-nest-qr-code').classList.add('hidden');
+    }
+
 });
 
 window.toggleCollapse = toggleCollapse;
@@ -116,7 +149,7 @@ window.onscroll = function () {
 
 function scrollFunction() {
     var mybutton = document.getElementById("back-to-top");
-    if(mybutton!=null){
+    if (mybutton != null) {
         if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
             mybutton.classList.add("block");
             mybutton.classList.remove("hidden");
@@ -136,10 +169,10 @@ function topFunction() {
 /* Dark & Light Mode */
 /*********************/
 try {
-    function changeTheme(e){
+    function changeTheme(e) {
         e.preventDefault()
         const htmlTag = document.getElementsByTagName("html")[0]
-        
+
         if (htmlTag.className.includes("dark")) {
             htmlTag.className = 'light'
         } else {
@@ -148,36 +181,37 @@ try {
     }
 
     const switcher = document.getElementById("theme-mode")
-    switcher?.addEventListener("click" ,changeTheme )
-    
+    switcher?.addEventListener("click", changeTheme)
+
     const chk = document.getElementById('chk');
 
-    chk.addEventListener('change',changeTheme);
+    chk.addEventListener('change', changeTheme);
 } catch (err) {
-    
+
 }
 
 
 /*********************/
 /* LTR & RTL Mode */
 /*********************/
-try{
+try {
     const htmlTag = document.getElementsByTagName("html")[0]
-    function changeLayout(e){
+
+    function changeLayout(e) {
         e.preventDefault()
         const switcherRtl = document.getElementById("switchRtl")
-        if(switcherRtl.innerText === "LTR"){
+        if (switcherRtl.innerText === "LTR") {
             htmlTag.dir = "ltr"
-        }
-        else{
+        } else {
             htmlTag.dir = "rtl"
         }
-        
+
     }
+
     const switcherRtl = document.getElementById("switchRtl")
-    switcherRtl?.addEventListener("click" ,changeLayout )
+    switcherRtl?.addEventListener("click", changeLayout)
+} catch (err) {
 }
-catch(err){}
 
 /*********************/
 /*   Feather Icons   */
@@ -188,7 +222,8 @@ feather.replace();
 /*  Active Sidebar   */
 /*********************/
 (function () {
-    var current = location.pathname.substring(location.pathname.lastIndexOf('/') + 1);;
+    var current = location.pathname.substring(location.pathname.lastIndexOf('/') + 1);
+    ;
     if (current === "") return;
     var menuItems = document.querySelectorAll('.sidebar-nav a');
     for (var i = 0, len = menuItems.length; i < len; i++) {
@@ -259,7 +294,7 @@ try {
         }, 200);
     }
 } catch (error) {
-    
+
 }
 
 /*********************/
@@ -268,5 +303,6 @@ try {
 try {
     new WOW().init();
 } catch (error) {
-    
+
 }
+
