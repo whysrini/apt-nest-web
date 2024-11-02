@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    const os = detectOS();
+    /*const os = detectOS();
     if(os === "iOS" || os === "Android") {
         [].forEach.call(document.querySelectorAll('.web-qr-code'), function (el) {
             el.classList.remove('inline-block');
@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         document.getElementById('apt-nest-qr-code').classList.remove('flex');
         document.getElementById('apt-nest-qr-code').classList.add('hidden');
-    }
+    }*/
 
 });
 
