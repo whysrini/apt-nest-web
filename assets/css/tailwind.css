@@ -2896,6 +2896,12 @@ html[dir=rtl] .tns-visually-hidden {
   .md\:grid-cols-6{
     grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
   }
+  .md\:flex-row{
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
   .md\:justify-end{
     -webkit-box-pack: end !important;
         -ms-flex-pack: end !important;
