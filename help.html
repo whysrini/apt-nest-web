@@ -38,10 +38,33 @@
 <!-- Navbar Start -->
 <nav class="navbar" id="navbar">
     <div class="container relative flex flex-wrap items-center justify-between">
-        <a class="navbar-brand md:me-8" href="/">
+        <a class="navbar-brand md:me-8" href="index.html">
             <img src="assets/images/logo-dark.png" class="h-5 inline-block dark:hidden" alt="">
             <img src="assets/images/logo-light.png" class="h-5 hidden dark:inline-block" alt="">
         </a>
+
+        <div class="nav-icons flex items-center lg_992:order-2 md:ms-6">
+            <!-- Navbar Collapse Manu Button -->
+            <button data-collapse="menu-collapse" type="button" class="collapse-btn inline-flex items-center ms-2 text-slate-900 dark:text-white lg_992:hidden" aria-controls="menu-collapse" aria-expanded="false">
+                <span class="sr-only">Navigation Menu</span>
+                <i class="mdi mdi-menu text-[24px]"></i>
+            </button>
+        </div>
+
+        <!-- Navbar Manu -->
+        <div class="navigation lg_992:order-1 lg_992:flex hidden" id="menu-collapse">
+            <ul class="navbar-nav" id="navbar-navlist">
+                <li class="nav-item">
+                    <a class="nav-link active cursor-pointer" data-id="#over-view">OverView</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link cursor-pointer" data-id="#users">Users</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link cursor-pointer" data-id="#user-permissions">Permissions</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
 <!-- Navbar End -->
@@ -49,78 +72,164 @@
 
 <!-- Start -->
 <section class="relative md:py-24 py-16 bg-slate-50/50 dark:bg-slate-800/20" id="contact">
-    <div class="container relative">
-        <div class="max-w-4xl mx-auto py-10 px-6 shadow-md rounded-lg">
-            <h1 class="text-2xl font-bold text-center mb-6">Roles and Permissions in AptNest App</h1>
+    <div id="over-view" class="container relative">
+        <div class="max-w-4xl mx-auto py-10 px-6 rounded-lg">
+            <h4 class="mb-6 md:text-2xl text-xl md:leading-normal leading-normal font-bold">
+                Roles and Permissions in AptNest App
+            </h4>
 
             <div class="space-y-6">
                 <!-- Super Admin -->
-                <div class="border-l-4 border-blue-600 pl-4">
-                    <h2 class="text-xl font-semibold">1. Super Admin</h2>
-                    <p class="mt-2">The Super Admin has the highest level of access and control within the application. Their responsibilities include:</p>
-                    <ul class="list-disc list-inside mt-2">
-                        <li><strong>Transactions:</strong> Full control to add, edit, or delete transactions.</li>
-                        <li><strong>User Management:</strong> Ability to add, edit, or delete users.</li>
-                        <li><strong>Functionalities Management:</strong> Comprehensive management of all features, including:
-                            <ul class="list-disc list-inside ml-6">
-                                <li>Flats</li>
-                                <li>Galleries</li>
-                                <li>Posts</li>
-                                <li>Notice Boards</li>
-                                <li>Services Listing</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+                <h2 class="text-xl font-semibold">1. Super Admin</h2>
+                <p class="mt-2 text-slate-400">The Super Admin has the highest level of access and control within the application. Their responsibilities include:</p>
+                <ul class="mt-2 text-slate-400">
+                    <li>
+                        <i class="mdi mdi-shield-account text-green-400 text-xl me-2"></i>
+                        <strong>Transactions:</strong> Full control to add, edit, or delete transactions.
+                    </li>
+                    <li>
+                        <i class="mdi mdi-shield-account text-green-400 text-xl me-2"></i>
+                        <strong>User Management:</strong> Ability to add, edit, or delete users.
+                    </li>
+                    <li>
+                        <i class="mdi mdi-shield-account text-green-400 text-xl me-2"></i>
+                        <strong>Functionalities Management:</strong> Comprehensive management of all features, including:
+                        <ul class="list-inside ml-6">
+                            <li> <i class="mdi mdi-check text-green-400 text-xl me-2"></i>Flats</li>
+                            <li> <i class="mdi mdi-check text-green-400 text-xl me-2"></i>Galleries</li>
+                            <li> <i class="mdi mdi-check text-green-400 text-xl me-2"></i>Posts</li>
+                            <li> <i class="mdi mdi-check text-green-400 text-xl me-2"></i>Notice Boards</li>
+                            <li> <i class="mdi mdi-check text-green-400 text-xl me-2"></i>Services Listing</li>
+                        </ul>
+                    </li>
+                </ul>
 
                 <!-- Admin -->
-                <div class="border-l-4 border-green-600 pl-4">
-                    <h2 class="text-xl font-semibold">2. Admin</h2>
-                    <p class="mt-2">Admins have significant access but with certain limitations compared to the Super Admin:</p>
-                    <ul class="list-disc list-inside mt-2">
-                        <li><strong>Functionalities Management:</strong> Can manage all functionalities, including flats, galleries, posts, notice boards, and services listings.</li>
-                        <li><strong>Restrictions:</strong>
-                            <ul class="list-disc list-inside ml-6">
-                                <li>Cannot manage (add/edit/delete) transactions.</li>
-                                <li>Cannot delete or edit galleries, posts, services listings, or other content created by other users.</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+                <h2 class="text-xl font-semibold">2. Admin</h2>
+                <p class="mt-2 text-slate-400">Admins have significant access but with certain limitations compared to the Super Admin:</p>
+                <ul class="list-inside mt-2 text-slate-400">
+                    <li>
+                        <i class="mdi mdi-shield-account text-green-400 text-xl me-2"></i>
+                        <strong>Functionalities Management:</strong> Can manage all functionalities, including flats, galleries, posts, notice boards, and services listings.
+                    </li>
+                    <li><strong>Restrictions:</strong>
+                        <ul class="list-inside ml-6">
+                            <li>
+                                <i class="mdi mdi-close text-red-500 text-xl me-2"></i>
+                                Cannot manage (add/edit/delete) transactions.
+                            </li>
+                            <li>
+                                <i class="mdi mdi-close text-red-500 text-xl me-2"></i>
+                                Cannot delete or edit galleries, posts, services listings, or other content created by other users.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
 
                 <!-- User -->
-                <div class="border-l-4 border-yellow-600 pl-4">
-                    <h2 class="text-xl font-semibold">3. User</h2>
-                    <p class="mt-2">Users have read-only access to most features:</p>
-                    <ul class="list-disc list-inside mt-2">
-                        <li><strong>View Permissions:</strong>
-                            <ul class="list-disc list-inside ml-6">
-                                <li>Transactions</li>
-                                <li>Galleries</li>
-                                <li>Services Listing</li>
-                            </ul>
-                        </li>
-                        <li><strong>No Management Rights:</strong> Users cannot add, edit, or delete any content.</li>
-                    </ul>
-                </div>
+                <h2 class="text-xl font-semibold">3. User</h2>
+                <p class="mt-2 text-slate-400">Users have read-only access to most features:</p>
+                <ul class="list-inside mt-2 text-slate-400">
+                    <li>
+                        <i class="mdi mdi-eye-outline text-green-400 text-xl me-2"></i>
+                        <strong>View Permissions:</strong>
+                        <ul class="list-disc list-inside ml-6">
+                            <li>
+                                <i class="mdi mdi-check text-green-400 text-xl me-2"></i>
+                                Transactions
+                            </li>
+                            <li>
+                                <i class="mdi mdi-check text-green-400 text-xl me-2"></i>
+                                Galleries
+                            </li>
+                            <li>
+                                <i class="mdi mdi-check text-green-400 text-xl me-2"></i>
+                                Services Listing
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <i class="mdi mdi-close text-red-500 text-xl me-2"></i>
+                        <strong>No Management Rights:</strong> Users cannot add, edit, or delete any content.
+                    </li>
+                </ul>
 
                 <!-- External User -->
-                <div class="border-l-4 border-red-600 pl-4">
-                    <h2 class="text-xl font-semibold">4. External User</h2>
-                    <p class="mt-2">External Users have limited access, focusing on specific features:</p>
-                    <ul class="list-disc list-inside mt-2">
-                        <li><strong>View Permissions:</strong>
-                            <ul class="list-disc list-inside ml-6">
-                                <li>Apartment Users Communication Options</li>
-                                <li>Gate Passes</li>
-                                <li>Services Listing</li>
-                            </ul>
+                <h2 class="text-xl font-semibold">4. External User</h2>
+                <p class="mt-2 text-slate-400">External Users have limited access, focusing on specific features:</p>
+                <ul class="list-inside mt-2 text-slate-400">
+                    <li><i class="mdi mdi-eye-outline text-green-400 text-xl me-2"></i>
+                        <strong>View Permissions:</strong>
+                        <ul class="list-inside ml-6">
+                            <li>
+                                <i class="mdi mdi-check text-green-400 text-xl me-2"></i>
+                                Apartment Users Communication Options
+                            </li>
+                            <li>
+                                <i class="mdi mdi-check text-green-400 text-xl me-2"></i>
+                                Gate Passes
+                            </li>
+                            <li>
+                                <i class="mdi mdi-check text-green-400 text-xl me-2"></i>
+                                Services Listing
+                            </li>
+                        </ul>
+                    </li>
+                    <li><strong>Restricted Areas:</strong> Cannot view or access:
+                        <ul class="list-disc list-inside ml-6">
+                            <li>
+                                <i class="mdi mdi-close text-red-500 text-xl me-2"></i>
+                                Transactions
+                            </li>
+                            <li>
+                                <i class="mdi mdi-close text-red-500 text-xl me-2"></i>
+                                Galleries</li>
+                            <li>
+                                <i class="mdi mdi-close text-red-500 text-xl me-2"></i>
+                                Posts
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="users" class="container relative md:mt-24 mt-16">
+        <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-6">
+            <div class="lg:col-span-5 md:col-span-6 md:order-2 order-1">
+                <div class="pt-6 px-6 rounded-2xl">
+                    <img src="assets/images/help/users.png" alt="">
+                </div>
+            </div>
+
+            <div class="lg:col-span-7 md:col-span-6 md:order-1 order-2">
+                <div class="lg:me-10">
+                    <h6 class="text-red-500 uppercase text-sm font-bold tracking-wider mb-3">USERS</h6>
+                    <h5 class="mb-6 md:text-2xl text-xl md:leading-normal leading-normal font-bold">Add users</h5>
+                    <p class="text-slate-400 max-w-xl">Only the Super Admin has the ability to add new users and manage user access permissions.</p>
+
+                    <ul class="list-none text-slate-400 mt-6">
+                        <li class="mb-1 flex">
+                            <i class="mdi mdi-arrow-right text-yellow-200 text-xl me-2"></i>
+                            Navigate to the Settings tab by clicking on the settings.
                         </li>
-                        <li><strong>Restricted Areas:</strong> Cannot view or access:
-                            <ul class="list-disc list-inside ml-6">
-                                <li>Transactions</li>
-                                <li>Galleries</li>
-                                <li>Posts</li>
+                        <li class="mb-1 flex">
+                            <i class="mdi mdi-arrow-right text-yellow-200 text-xl me-2"></i>
+                            Tap on Users, then tap the Add User icon located in the top-right corner. This will open a bottom sheet.
+                        </li>
+                        <li class="mb-1">
+                            <i class="mdi mdi-arrow-right text-yellow-200 text-xl me-2"></i>
+                            Fill in the required fields:
+                            <ul class="list-inside ml-6">
+                                <li>
+                                    <i class="mdi mdi-chevron-right text-yellow-200 text-xl me-2"></i>
+                                    First Name, Last Name
+                                </li>
+                                <li>
+                                    <i class="mdi mdi-chevron-right text-yellow-200 text-xl me-2"></i>
+                                    Phone Number (Ensure the phone number is correct, as it will be used for login purposes.)
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -129,43 +238,57 @@
         </div>
     </div>
 
-    <div class="container relative md:mt-24 mt-16">
+    <div id="user-permissions" class="container relative md:mt-24 mt-16">
         <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-6">
             <div class="lg:col-span-5 md:col-span-6 md:order-2 order-1">
-                <div class="pt-6 px-6 rounded-2xl bg-red-500/5 dark:bg-red-500/10 shadow shadow-red-500/20">
-                    <img src="assets/images/phone/half-2.png" alt="">
+                <div class="pt-6 px-6 rounded-2xl">
+                    <img src="assets/images/help/user-permissions.png" alt="">
                 </div>
             </div>
 
             <div class="lg:col-span-7 md:col-span-6 md:order-1 order-2">
                 <div class="lg:me-10">
-                    <h6 class="text-red-500 uppercase text-sm font-bold tracking-wider mb-3">Elegant Design</h6>
-                    <h4 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-bold">Share your photos
-                        with
-                        friends easily</h4>
-                    <p class="text-slate-400 max-w-xl">Effortlessly share your photos within your apartment community.
-                        Keep everyone connected and engaged with your latest memories.</p>
+                    <h6 class="text-red-500 uppercase text-sm font-bold tracking-wider mb-3">USERS ROLE</h6>
+                    <h5 class="mb-6 md:text-2xl text-xl md:leading-normal leading-normal font-bold">Change User Permissions and Status</h5>
+                    <p class="text-slate-400 max-w-xl">Only the Super Admin can modify user permissions and status.</p>
+                    <p class="text-slate-400 max-w-xl">To update permissions or change user status:</p>
 
                     <ul class="list-none text-slate-400 mt-6">
-                        <li class="mb-1 flex"><i class="mdi mdi-check text-red-500 text-xl me-2"></i> Seamless photo
-                            sharing within the community
+                        <li class="mb-1 flex">
+                            <i class="mdi mdi-arrow-right text-yellow-200 text-xl me-2"></i>
+                            Navigate to the Settings tab.
                         </li>
-                        <li class="mb-1 flex"><i class="mdi mdi-check text-red-500 text-xl me-2"></i> Instant uploads to
-                            community galleries
+                        <li class="mb-1 flex">
+                            <i class="mdi mdi-arrow-right text-yellow-200 text-xl me-2"></i>
+                            Tap on Users and select the user whose details need to be updated.
                         </li>
-                        <li class="mb-1 flex"><i class="mdi mdi-check text-red-500 text-xl me-2"></i> Comment and react
-                            on shared photos
+                        <li class="mb-1">
+                            <i class="mdi mdi-arrow-right text-yellow-200 text-xl me-2"></i>
+                            In the Permissions section:
+                            <ul class="list-inside ml-6">
+                                <li>
+                                    <i class="mdi mdi-chevron-right text-yellow-200 text-xl me-2"></i>
+                                    Adjust the user's role or access levels as needed (e.g., User, Admin, Super User).
+                                </li>
+                            </ul>
                         </li>
-                        <li class="mb-1 flex"><i class="mdi mdi-check text-red-500 text-xl me-2"></i> Organize photos
-                            into community albums
+                        <li class="mb-1">
+                            <i class="mdi mdi-arrow-right text-yellow-200 text-xl me-2"></i>
+                            In the Status section:
+                            <ul class="list-inside ml-6">
+                                <li>
+                                    <i class="mdi mdi-chevron-right text-yellow-200 text-xl me-2"></i>
+                                    Toggle the user's status between Active or Inactive.
+                                </li>
+                            </ul>
                         </li>
                     </ul>
-
-                    <div class="mt-6">
-                        <a href=""
-                           class="hover:text-red-500 dark:hover:text-red-500 after:bg-red-500 dark:text-white transition duration-500 font-medium">Learn
-                            More <i class="mdi mdi-arrow-right align-middle"></i></a>
-                    </div>
+                    <p class="text-slate-400 max-w-xl mt-3">
+                        Ensure you save the changes after updating permissions or status to reflect them in the system.
+                    </p>
+                    <p class="text-red-300 max-w-xl mt-3">
+                      <strong >NOTE:</strong>  Inactive Status: Restricts the user's ability to log in or access any functionality
+                    </p>
                 </div>
             </div>
         </div>
