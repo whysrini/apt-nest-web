@@ -35,16 +35,26 @@
     </div> -->
     <!-- Loader End -->
 
+
 <!-- Navbar Start -->
 <nav class="navbar" id="navbar">
     <div class="container relative flex flex-wrap items-center justify-between">
-        <a class="navbar-brand md:me-8" href="index.html">
-            <img src="assets/images/logo-dark.png" class="h-8 inline-block dark:hidden" alt="">
-            <img src="assets/images/logo-light.png" class="h-8 hidden dark:inline-block" alt="">
+        <a class="navbar-brand md:me-8" href="/">
+            <img src="assets/images/logo-dark.png" class="h-5 inline-block dark:hidden" alt="">
+            <img src="assets/images/logo-light.png" class="h-5 hidden dark:inline-block" alt="">
         </a>
+
+        <div class="nav-icons flex items-center lg_992:order-2 md:ms-6">
+            <!-- Navbar Collapse Manu Button -->
+            <button data-collapse="menu-collapse" type="button" class="collapse-btn inline-flex items-center ms-2 text-slate-900 dark:text-white lg_992:hidden" aria-controls="menu-collapse" aria-expanded="false">
+                <span class="sr-only">Navigation Menu</span>
+                <i class="mdi mdi-menu text-[24px]"></i>
+            </button>
+        </div>
+
         <!-- Navbar Manu -->
-        <div class="navigation lg_992:order-1 lg_992:flex hidden ms-auto" id="menu-collapse">
-            <ul class="navbar-nav cursor-pointer" id="navbar-navlist">
+        <div class="navigation lg_992:order-1 lg_992:flex hidden" id="menu-collapse">
+            <ul class="navbar-nav" id="navbar-navlist">
                 <li class="nav-item">
                     <a class="nav-link active" data-id="#home">Home</a>
                 </li>
@@ -62,6 +72,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link cursor-pointer" data-id="#reviews">Reviews</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/help.html" target="_blank" class="nav-link cursor-pointer" >Help</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link cursor-pointer" data-id="#contact">Contact us</a>
