@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AptNest - Apartment Management App - The Key to Simplifying Your Apartment Experience.</title>
+    <title>AptNest - The Key to Simplifying Your Apartment Experience.</title>
     <meta name="description" content="Apt Nest offers a complete apartment management solution. From financial oversight to photo sharing and community news, our app provides everything you need for modern apartment living.">
     <meta name="keywords" content="apartment management, apartment community app, apartment finances, apartment photo sharing, apartment events, apartment news, community connection, tenant management, apartment living, apartment app, home management, property management app, apartment community features, financial management for apartments, apartment community updates">
     <meta name="author" content="LEXIOT">
@@ -12,6 +12,7 @@
     <meta name="version" content="1..0">
     <!-- favicon -->
     <link href="assets/images/favicon.ico" rel="shortcut icon">
+
     <!-- Css -->
     <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
     <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
@@ -85,29 +86,35 @@
 </nav>
 <!-- Navbar End -->
 
-<!-- Start Hero -->
+<!-- Start -->
 <section
-        class="relative overflow-hidden pt-40 after:content-[''] after:absolute after:inset-0 after:mx-auto after:size-[56rem] after:bg-gradient-to-tl after:to-red-600/40  after:from-indigo-600/40 after:blur-[200px] after:rounded-full after:-z-1"
+        class="relative overflow-hidden md:py-36 py-24 bg-slate-50/50 dark:bg-slate-800/20 bg-[url('../../assets/images/bg1.png')] bg-no-repeat bg-center bg-cover"
         id="home">
-    <div class="container relative z-2">
-        <div class="grid grid-cols-1 text-center">
-            <div class="">
-                <h4 class="text-4xl lg:text-[54px] mb-5">
-                    <span class="font-['Comfortaa'] theme-color theme-logo-shadow-white font-bold">Apt</span>
-                    <span class="font-['Comfortaa'] font-bold">Nest</span> <br>
-                    <span class="text-xl lg:text-[30px]">The Apartment Community APP</span> <br>
-                    <span class="lg:leading-normal leading-normal  typewrite font-bold" data-period="2000"
-                          data-type='[ "Financial tracking", "Flats with owner and tenant info", "Parking slots", "Galleries",  "Event updates", "Notice board", "Local services directory", "Automated monthly summaries" ]'></span>
-                    <span class="wrap"></span>
-                </h4>
+    <div class="container relative">
+        <div class="grid md:grid-cols-2 grid-cols-1 items-center mt-6 gap-[30px] relative">
+            <div class="md:me-6">
+                <h6 class="text-red-500 uppercase text-sm font-bold tracking-wider mb-3">App Showcase</h6>
+                <h3 class="font-bold lg:leading-normal leading-normal text-[32px] lg:text-[44px] mb-5">AptNest</h3>
+                <p class="text-slate-400 text-lg max-w-xl">Apt Nest simplifies apartment management with financial
+                    tracking, galleries, and event updates. Enjoy direct maintenance payments and automated monthly
+                    summaries, all in one app.</p>
+
+                <div class="mt-6">
+                    <a href=""><img src="assets/images/app.png" class="h-12 inline-block m-1" alt=""></a>
+                    <a href=""><img src="assets/images/play.png" class="h-12 inline-block m-1" alt=""></a>
+                </div>
             </div>
-            <div class="relative mt-4 lg:mx-16 z-3">
-                <img src="assets/images/phone/3-phone-half.png" alt="" class="mover">
+
+            <div class="relative">
+                <img src="assets/images/phone/1.png" class="mx-auto w-80 rotate-12 relative z-2" alt="">
+                <div class="overflow-hidden absolute md:size-[500px] size-[400px] bg-gradient-to-tl to-red-500/20 via-red-500/70 from-red-500 bottom-1/2 translate-y-1/2 md:start-0 start-1/2 ltr:md:translate-x-0 ltr:-translate-x-1/2 rtl:md:translate-x-0 rtl:translate-x-1/2 z-1 shadow-md shadow-red-500/10 rounded-full"></div>
+
+                <div class="overflow-hidden after:content-[''] after:absolute after:size-16 after:bg-red-500/20 after:top-0 after:end-6 after:z-1 after:rounded-lg after:animate-[spin_10s_linear_infinite]"></div>
             </div>
         </div><!--end grid-->
     </div><!--end container-->
 </section><!--end section-->
-<!-- End Hero -->
+<!-- End -->
 
 <!-- Start -->
 <section class="relative md:py-24 py-16" id="features">
@@ -121,89 +128,86 @@
                 management.</p>
         </div><!--end grid-->
 
-        <div class="grid lg:grid-cols-12 md:grid-cols-12 grid-cols-1 mt-6 gap-6 items-center">
-            <div class="lg:col-span-4 md:col-span-6 lg:order-1 order-2">
-                <div class="grid grid-cols-1 gap-6">
-                    <div class="group flex duration-500 xl:p-3">
-                        <div class="flex md:order-2 order-1 align-middle justify-center items-center size-16 mt-1 bg-red-500/5 dark:bg-red-500/10 group-hover:bg-red-500 group-hover:text-white text-red-500 rounded-2xl text-2xl shadow-sm dark:shadow-gray-800 duration-500">
-                            <i data-feather="monitor" class="size-5"></i>
-                        </div>
-                        <div class="flex-1 md:order-1 order-2 md:text-end md:me-4 md:ms-0 ms-4">
-                            <h4 class="mb-0 text-lg font-semibold">Secure Data</h4>
-                            <p class="text-slate-400 mt-3">Apt Nest ensures your data is secure with SSL encryption and
-                                never shares your information.</p>
-                        </div>
-                    </div>
-                    <!--end feature-->
-
-                    <div class="group flex duration-500 xl:p-3">
-                        <div class="flex md:order-2 order-1 align-middle justify-center items-center size-16 mt-1 bg-red-500/5 dark:bg-red-500/10 group-hover:bg-red-500 group-hover:text-white text-red-500 rounded-2xl text-2xl shadow-sm dark:shadow-gray-800 duration-500">
-                            <i data-feather="feather" class="size-5"></i>
-                        </div>
-                        <div class="flex-1 md:order-1 order-2 md:text-end md:me-4 md:ms-0 ms-4">
-                            <h4 class="mb-0 text-lg font-semibold">Financial tracking</h4>
-                            <p class="text-slate-400 mt-3">Track your finances and automate transaction sharing
-                                effortlessly with Apt Nest.</p>
-                        </div>
-                    </div>
-                    <!--end feature-->
-
-                    <div class="group flex duration-500 xl:p-3">
-                        <div class="flex md:order-2 order-1 align-middle justify-center items-center size-16 mt-1 bg-red-500/5 dark:bg-red-500/10 group-hover:bg-red-500 group-hover:text-white text-red-500 rounded-2xl text-2xl shadow-sm dark:shadow-gray-800 duration-500">
-                            <i data-feather="eye" class="size-5"></i>
-                        </div>
-                        <div class="flex-1 md:order-1 order-2 md:text-end md:me-4 md:ms-0 ms-4">
-                            <h4 class="mb-0 text-lg font-semibold">Reports</h4>
-                            <p class="text-slate-400 mt-3">Share transaction details in multiple formats, including PDF, image, and CSV.</p>
-                        </div>
-                    </div>
-                    <!--end feature-->
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 mt-6 gap-6">
+            <div class="p-6 shadow-xl shadow-slate-100 dark:shadow-slate-800 transition duration-500 rounded-3xl">
+                <div class="size-16 bg-red-500/5 text-red-500 rounded-2xl flex align-middle justify-center items-center shadow-sm">
+                    <i data-feather="pie-chart" class="size-5"></i>
                 </div>
-            </div>
 
-            <div class="lg:col-span-4 md:col-span-12 lg:mx-4 lg:order-2 order-1">
-                <img src="assets/images/phone/1.png" class="mx-auto" alt="">
-            </div>
+                <div class="content mt-7">
+                    <a href=""
+                       class="text-lg hover:text-red-500 dark:text-white dark:hover:text-red-500 transition-all duration-500 ease-in-out font-semibold">Secure
+                        Data</a>
+                    <p class="text-slate-400 mt-3">Apt Nest ensures your data is secure with SSL encryption and never
+                        shares your information.</p>
 
-            <div class="lg:col-span-4 md:col-span-6 order-3">
-                <div class="grid grid-cols-1 gap-6">
-                    <div class="group flex duration-500 xl:p-3">
-                        <div class="flex align-middle justify-center items-center size-16 mt-1 bg-red-500/5 dark:bg-red-500/10 group-hover:bg-red-500 group-hover:text-white text-red-500 rounded-2xl text-2xl shadow-sm dark:shadow-gray-800 duration-500">
-                            <i data-feather="user-check" class="size-5"></i>
-                        </div>
-                        <div class="flex-1 ms-4">
-                            <h4 class="mb-0 text-lg font-semibold">Share movements</h4>
-                            <p class="text-slate-400 mt-3">Share photo galleries, stay updated on events.</p>
-                        </div>
+                    <div class="mt-3">
+                        <a href=""
+                           class="hover:text-red-500 dark:hover:text-red-500 after:bg-red-500 dark:text-white transition duration-500">Read
+                            More <i class="mdi mdi-arrow-right"></i></a>
                     </div>
-                    <!--end feature-->
-
-                    <div class="group flex duration-500 xl:p-3">
-                        <div class="flex align-middle justify-center items-center size-16 mt-1 bg-red-500/5 dark:bg-red-500/10 group-hover:bg-red-500 group-hover:text-white text-red-500 rounded-2xl text-2xl shadow-sm dark:shadow-gray-800 duration-500">
-                            <i data-feather="smartphone" class="size-5"></i>
-                        </div>
-                        <div class="flex-1 ms-4">
-                            <h4 class="mb-0 text-lg font-semibold">Offline Access with Automatic Sync.</h4>
-                            <p class="text-slate-400 mt-3">Offline support with automatic data synchronization when
-                                you’re back online.</p>
-                        </div>
-                    </div>
-                    <!--end feature-->
-
-                    <div class="group flex duration-500 xl:p-3">
-                        <div class="flex align-middle justify-center items-center size-16 mt-1 bg-red-500/5 dark:bg-red-500/10 group-hover:bg-red-500 group-hover:text-white text-red-500 rounded-2xl text-2xl shadow-sm dark:shadow-gray-800 duration-500">
-                            <i data-feather="heart" class="size-5"></i>
-                        </div>
-                        <div class="flex-1 ms-4">
-                            <h4 class="mb-0 text-lg font-semibold">Multi-Apartment Support</h4>
-                            <p class="text-slate-400 mt-3">Allowing you to easily switch between different Apartments
-                                and stay organized.</p>
-                        </div>
-                    </div>
-                    <!--end feature-->
                 </div>
-            </div>
-        </div><!--end grid-->
+            </div><!--end content-->
+
+            <div class="p-6 hover:shadow-xl hover:shadow-slate-100 dark:hover:shadow-slate-800 transition duration-500 rounded-3xl">
+                <div class="size-16 bg-red-500/5 text-red-500 rounded-2xl flex align-middle justify-center items-center shadow-sm">
+                    <i data-feather="maximize" class="size-5"></i>
+                </div>
+
+                <div class="content mt-7">
+                    <a href=""
+                       class="text-lg hover:text-red-500 dark:text-white dark:hover:text-red-500 transition-all duration-500 ease-in-out font-semibold">Financial
+                        tracking</a>
+                    <p class="text-slate-400 mt-3">Track your finances and automate transaction sharing effortlessly
+                        with Apt Nest.</p>
+
+                    <div class="mt-3">
+                        <a href=""
+                           class="hover:text-red-500 dark:hover:text-red-500 after:bg-red-500 dark:text-white transition duration-500">Read
+                            More <i class="mdi mdi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div><!--end content-->
+
+            <div class="p-6 hover:shadow-xl hover:shadow-slate-100 dark:hover:shadow-slate-800 transition duration-500 rounded-3xl">
+                <div class="size-16 bg-red-500/5 text-red-500 rounded-2xl flex align-middle justify-center items-center shadow-sm">
+                    <i data-feather="navigation-2" class="size-5"></i>
+                </div>
+
+                <div class="content mt-7">
+                    <a href=""
+                       class="text-lg hover:text-red-500 dark:text-white dark:hover:text-red-500 transition-all duration-500 ease-in-out font-semibold">Payments</a>
+                    <p class="text-slate-400 mt-3">Easily pay your maintenance fees directly through the app each
+                        month.</p>
+
+                    <div class="mt-3">
+                        <a href=""
+                           class="hover:text-red-500 dark:hover:text-red-500 after:bg-red-500 dark:text-white transition duration-500">Read
+                            More <i class="mdi mdi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div><!--end content-->
+
+            <div class="p-6 shadow-xl shadow-slate-100 dark:shadow-slate-800 transition duration-500 rounded-3xl">
+                <div class="size-16 bg-red-500/5 text-red-500 rounded-2xl flex align-middle justify-center items-center shadow-sm">
+                    <i data-feather="database" class="size-5"></i>
+                </div>
+
+                <div class="content mt-7">
+                    <a href=""
+                       class="text-lg hover:text-red-500 dark:text-white dark:hover:text-red-500 transition-all duration-500 ease-in-out font-semibold">Share
+                        movements</a>
+                    <p class="text-slate-400 mt-3">Share photo galleries, stay updated on events, and catch the latest
+                        news with ease.</p>
+
+                    <div class="mt-3">
+                        <a href=""
+                           class="hover:text-red-500 dark:hover:text-red-500 after:bg-red-500 dark:text-white transition duration-500">Read
+                            More <i class="mdi mdi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div><!--end content-->
+        </div>
     </div><!--end container-->
 
     <div class="container relative md:mt-24 mt-16">
@@ -230,9 +234,8 @@
                             <div class="flex-1 ms-3">
                                 <h5 class="group-hover:text-white text-lg font-semibold duration-500">Enhance
                                     Security</h5>
-                                <p class="text-slate-400 group-hover:text-white/50 duration-500 mt-2">Data protection
-                                    with enhanced security features, including SSL encryption and advanced
-                                    algorithms.</p>
+                                <p class="text-slate-400 group-hover:text-white/50 duration-500 mt-2">There are many
+                                    variations of passages of Lorem Ipsum available</p>
                             </div>
                             <div class="absolute start-1 top-5 text-slate-900/[0.02] dark:text-white/[0.03] text-8xl group-hover:text-white/[0.1] duration-500">
                                 <i data-feather="shield" class="size-24"></i>
@@ -246,9 +249,8 @@
                             <div class="flex-1 ms-3">
                                 <h5 class="group-hover:text-white text-lg font-semibold duration-500">High
                                     Performance</h5>
-                                <p class="text-slate-400 group-hover:text-white/50 duration-500 mt-2">AptNest App
-                                    ensures exceptionally smooth, fast, and efficient app performance for a superior
-                                    user experience.</p>
+                                <p class="text-slate-400 group-hover:text-white/50 duration-500 mt-2">There are many
+                                    variations of passages of Lorem Ipsum available</p>
                             </div>
                             <div class="absolute start-1 top-5 text-slate-900/[0.02] dark:text-white/[0.03] text-8xl group-hover:text-white/[0.1] duration-500">
                                 <i data-feather="aperture" class="size-24"></i>
@@ -278,8 +280,7 @@
                 <div class="lg:me-10">
                     <h6 class="text-red-500 uppercase text-sm font-bold tracking-wider mb-3">Elegant Design</h6>
                     <h4 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-bold">Share your photos
-                        with
-                        friends easily</h4>
+                        with <br> friends easily</h4>
                     <p class="text-slate-400 max-w-xl">Effortlessly share your photos within your apartment community.
                         Keep everyone connected and engaged with your latest memories.</p>
 
@@ -326,56 +327,43 @@
         <div class="grid grid-cols-1 mt-6 relative">
             <div class="tiny-four-item">
                 <div class="tiny-slide">
-                    <a href="assets/images/phone/s1.png" class="lightbox">
-                        <img src="assets/images/phone/s1.png" alt=""></a>
-                </div>
-
-                <div class="tiny-slide">
-                    <a href="assets/images/phone/s2.png" class="lightbox">
-                        <img src="assets/images/phone/s2.png"
+                    <a href="assets/images/phone/1.png" class="lightbox"><img src="assets/images/phone/1.png"
                                                                               alt=""></a>
                 </div>
 
                 <div class="tiny-slide">
-                    <a href="assets/images/phone/s3.png" class="lightbox">
-                        <img src="assets/images/phone/s3.png"
+                    <a href="assets/images/phone/2.png" class="lightbox"><img src="assets/images/phone/2.png"
                                                                               alt=""></a>
                 </div>
 
                 <div class="tiny-slide">
-                    <a href="assets/images/phone/s4.png" class="lightbox">
-                        <img src="assets/images/phone/s4.png"
+                    <a href="assets/images/phone/3.png" class="lightbox"><img src="assets/images/phone/3.png"
                                                                               alt=""></a>
                 </div>
 
                 <div class="tiny-slide">
-                    <a href="assets/images/phone/s5.png" class="lightbox">
-                        <img src="assets/images/phone/s5.png" alt=""></a>
+                    <a href="assets/images/phone/4.png" class="lightbox"><img src="assets/images/phone/4.png"
+                                                                              alt=""></a>
                 </div>
 
                 <div class="tiny-slide">
-                    <a href="assets/images/phone/s6.png" class="lightbox">
-                        <img src="assets/images/phone/s6.png"  alt=""></a>
+                    <a href="assets/images/phone/5.png" class="lightbox"><img src="assets/images/phone/5.png"
+                                                                              alt=""></a>
                 </div>
 
                 <div class="tiny-slide">
-                    <a href="assets/images/phone/s7.png" class="lightbox">
-                        <img src="assets/images/phone/s7.png" alt=""></a>
+                    <a href="assets/images/phone/6.png" class="lightbox"><img src="assets/images/phone/6.png"
+                                                                              alt=""></a>
                 </div>
 
                 <div class="tiny-slide">
-                    <a href="assets/images/phone/s8.png" class="lightbox">
-                        <img src="assets/images/phone/s8.png" alt=""></a>
+                    <a href="assets/images/phone/7.png" class="lightbox"><img src="assets/images/phone/7.png"
+                                                                              alt=""></a>
                 </div>
 
                 <div class="tiny-slide">
-                    <a href="assets/images/phone/s9.png" class="lightbox">
-                        <img src="assets/images/phone/s9.png" alt=""></a>
-                </div>
-
-                <div class="tiny-slide">
-                    <a href="assets/images/phone/s10.png" class="lightbox">
-                        <img src="assets/images/phone/10.png" alt=""></a>
+                    <a href="assets/images/phone/8.png" class="lightbox"><img src="assets/images/phone/8.png"
+                                                                              alt=""></a>
                 </div>
             </div>
         </div>
@@ -391,18 +379,28 @@
                 <div class="relative">
                     <img src="assets/images/phone/3.png" class="mx-auto md:max-w-xs lg:max-w-sm" alt="">
 
-                    <!--
                     <div class="absolute top-24 md:end-14 -end-2 text-center">
                         <a href="#!" data-type="youtube" data-id="S_CGed6E610"
                            class="lightbox size-20 rounded-full shadow-md dark:shadow-gyay-700 inline-flex items-center justify-center text-white bg-red-500">
                             <i class="mdi mdi-play inline-flex items-center justify-center text-2xl"></i>
                         </a>
                     </div>
-                    -->
                 </div>
                 <div class="overflow-hidden absolute md:size-[500px] size-[400px] bg-gradient-to-tr to-red-500/20 via-red-500/70 from-red-500 bottom-1/2 translate-y-1/2 md:end-0 end-1/2 md:translate-x-0 translate-x-1/2 -z-1 shadow-md shadow-red-500/10 rounded-full"></div>
-            </div>
 
+                <div class="absolute bottom-28 md:start-0 -start-5 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 w-52 m-3">
+                    <div class="flex items-center">
+                        <div class="flex items-center justify-center size-[65px] bg-red-500/5 text-red-500 text-center rounded-full me-3">
+                            <i data-feather="download" class="size-6"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h6 class="text-slate-400">Total Users</h6>
+                            <p class="text-xl font-bold"><span class="counter-value" data-target="45485">39548</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div class="lg:me-8 order-2 md:order-1">
                 <h6 class="text-red-500 uppercase text-sm font-bold tracking-wider mb-3">FAQs</h6>
@@ -455,7 +453,8 @@
                         <div id="accordion-collapse-body-2" class="hidden"
                              aria-labelledby="accordion-collapse-heading-2">
                             <div class="p-5">
-                                <p class="text-slate-400 dark:text-gray-400">Get started with no initial fee! Enjoy the app absolutely free for the first 6 months. After that, if your storage exceeds 2GB, you’ll be charged just ₹500 per year for the additional storage.</p>
+                                <p class="text-slate-400 dark:text-gray-400">No initial fee is required. After the first
+                                    year, a ₹500 payment is needed for extended support.</p>
                             </div>
                         </div>
                     </div>
@@ -466,7 +465,7 @@
                                     class="flex justify-between items-center p-5 w-full font-medium text-start"
                                     data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
                                     aria-controls="accordion-collapse-body-3">
-                                <span>Do you share any apartment data?</span>
+                                <span>What do I need to do to start selling ?</span>
                                 <svg data-accordion-icon class="size-4 shrink-0" fill="currentColor" viewBox="0 0 20 20"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd"
@@ -478,8 +477,8 @@
                         <div id="accordion-collapse-body-3" class="hidden"
                              aria-labelledby="accordion-collapse-heading-3">
                             <div class="p-5">
-                                <p class="text-slate-400 dark:text-gray-400">No, we do not share any data with external
-                                    users. Your information remains confidential and secure..</p>
+                                <p class="text-slate-400 dark:text-gray-400">There are many variations of passages of
+                                    Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
                             </div>
                         </div>
                     </div>
@@ -490,7 +489,7 @@
                                     class="flex justify-between items-center p-5 w-full font-medium text-start"
                                     data-accordion-target="#accordion-collapse-body-4" aria-expanded="false"
                                     aria-controls="accordion-collapse-body-4">
-                                <span>Does the app allow multiple apartments?</span>
+                                <span>What happens when I receive an order ?</span>
                                 <svg data-accordion-icon class="size-4 shrink-0" fill="currentColor" viewBox="0 0 20 20"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd"
@@ -502,8 +501,8 @@
                         <div id="accordion-collapse-body-4" class="hidden"
                              aria-labelledby="accordion-collapse-heading-4">
                             <div class="p-5">
-                                <p class="text-slate-400 dark:text-gray-400">Yes, you can manage and switch between as
-                                    many apartments as needed with ease.</p>
+                                <p class="text-slate-400 dark:text-gray-400">There are many variations of passages of
+                                    Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
                             </div>
                         </div>
                     </div>
@@ -535,56 +534,24 @@
                     <h6 class="text-red-500 uppercase text-sm font-bold tracking-wider mb-3">Mobile Apps</h6>
                     <h4 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-bold">Available for your
                         <br> Smartphones</h4>
-                    <p class="text-slate-400 max-w-xl mb-0">
-                        Unlock the full potential of our platform with a range of
-                        powerful features, designed to empower you in reaching your goals.
-                    </p>
-                    <p class="my-2">
-                        <span class="text-red-500">New to the app?</span> <br/>
-                        Just email your name and apartment address to <span class="text-blue-500">info@aptnest.com</span>, and we’ll quickly set up your access.
-                    </p>
-
-
-                    <div class="flex flex-col items-center justify-center gap-3 mt-3">
-                        <div class="flex flex-col md:flex-row items-center justify-center gap-5">
-                            <div class="flex flex-col items-center justify-center gap-2">
-                                <a href="https://apps.apple.com/in/app/aptnest/id6569243940" target="_blank">
-                                    <img alt="Get AptNest on the App store"
-                                         class="h-12 inline-block m-1"
-                                         src="assets/images/download_on_the_App_Store.svg">
-                                </a>
-                            </div>
-                            <div class="flex flex-col items-center justify-center gap-2">
-                                <a href='https://play.google.com/store/apps/details?id=com.aptnest.lexiot' target="_blank">
-                                    <img alt='Get AptNest on the Google Play'
-                                         class="h-12 inline-block m-1"
-                                         src='assets/images/get-it-on-google-play.png'/>
-                                </a>
-                            </div>
-                            <div class="flex flex-col items-center justify-center gap-2">
-                                <a href='https://indusapp.store/m5jrqn9g' target="_blank">
-                                    <img alt='Get AptNest on the Indus Appstore'
-                                         class="h-12 inline-block m-1"
-                                         src='assets/images/Indus-appstore-download.png'/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="flex flex-col items-center justify-center" id="apt-nest-qr-code">
-                            <a href='https://lexiot.com/apt-nest/qr-code' target="_blank" >
-                                <img alt='Get AptNest on the Appstore – Scan to Download'
-                                     class="h-52 inline-block m-1 rounded-lg"
-                                     src='assets/images/apt-nest-qr-code.png'/>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!--
+                    <p class="text-slate-400 max-w-xl mb-0">Unleash the power of our platform with a multitude of
+                        powerful features, empowering you to achieve your goals.</p>
                     <div class="my-6">
-                        <a href="" target="_blank">
-                            <img src="assets/images/play.png" class="h-12 inline-block m-1" alt="">
-                        </a>
+                        <a href=""><img src="assets/images/app.png" class="h-12 inline-block m-1" alt=""></a>
+                        <a href=""><img src="assets/images/play.png" class="h-12 inline-block m-1" alt=""></a>
                     </div>
-                    -->
+
+                    <div class="inline-block">
+                        <div class="pt-4 flex items-center border-t border-gray-100 dark:border-gray-800">
+                            <i data-feather="smartphone" class="me-2 text-red-500 size-10"></i>
+                            <div class="content">
+                                <h6 class="text-base font-medium">Install app now on your cellphones</h6>
+                                <a href=""
+                                   class="hover:text-red-500 dark:hover:text-red-500 after:bg-red-500 dark:text-white transition duration-500 font-medium">Install
+                                    Now <i class="mdi mdi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div><!--end gird-->
@@ -600,8 +567,8 @@
             <h4 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-bold">10k+ Customers Trust
                 Us</h4>
 
-            <p class="text-slate-400 max-w-xl mx-auto">Join over 10,000 customers who trust us for exceptional service
-                and reliability.</p>
+            <p class="text-slate-400 max-w-xl mx-auto">Unleash the power of our platform with a multitude of powerful
+                features, empowering you to achieve your goals.</p>
         </div><!--end grid-->
 
         <div class="grid grid-cols-1 mt-6">
@@ -610,8 +577,8 @@
                     <div class="cursor-e-resize">
                         <div class="content relative rounded shadow dark:shadow-gray-800 m-2 p-6 bg-white dark:bg-slate-900 before:content-[''] before:absolute before:start-1/2 before:-bottom-[4px] before:box-border before:border-8 before:rotate-[45deg] before:border-t-transparent before:border-e-white dark:before:border-e-slate-900 before:border-b-white dark:before:border-b-slate-900 before:border-s-transparent before:shadow-testi dark:before:shadow-gray-700 before:origin-top-left">
                             <i class="mdi mdi-format-quote-open mdi-48px text-red-500"></i>
-                            <p class="text-slate-400">" Switching between multiple apartments is a breeze with this app.
-                                It’s a game-changer for property management. "</p>
+                            <p class="text-slate-400">" It seems that only fragments of the original text remain in the
+                                Lorem Ipsum texts used today. "</p>
                             <ul class="list-none mb-0 text-amber-400 mt-3">
                                 <li class="inline"><i class="mdi mdi-star"></i></li>
                                 <li class="inline"><i class="mdi mdi-star"></i></li>
@@ -624,8 +591,8 @@
                         <div class="text-center mt-5">
                             <img src="assets/images/client/01.jpg" class="size-14 rounded-full shadow-md mx-auto"
                                  alt="">
-                            <h6 class="mt-2 font-semibold">Krishana</h6>
-                            <span class="text-slate-400 text-sm">Flat owner</span>
+                            <h6 class="mt-2 font-semibold">Calvin Carlo</h6>
+                            <span class="text-slate-400 text-sm">Manager</span>
                         </div>
                     </div>
                 </div>
@@ -634,8 +601,8 @@
                     <div class="cursor-e-resize">
                         <div class="content relative rounded shadow dark:shadow-gray-800 m-2 p-6 bg-white dark:bg-slate-900 before:content-[''] before:absolute before:start-1/2 before:-bottom-[4px] before:box-border before:border-8 before:rotate-[45deg] before:border-t-transparent before:border-e-white dark:before:border-e-slate-900 before:border-b-white dark:before:border-b-slate-900 before:border-s-transparent before:shadow-testi dark:before:shadow-gray-700 before:origin-top-left">
                             <i class="mdi mdi-format-quote-open mdi-48px text-red-500"></i>
-                            <p class="text-slate-400">" Impressed by the enhanced security features. The SSL encryption
-                                and advanced algorithms make me feel confident about my data. "</p>
+                            <p class="text-slate-400">" The most well-known dummy text is the 'Lorem Ipsum', which is
+                                said to have originated in the 16th century. "</p>
                             <ul class="list-none mb-0 text-amber-400 mt-3">
                                 <li class="inline"><i class="mdi mdi-star"></i></li>
                                 <li class="inline"><i class="mdi mdi-star"></i></li>
@@ -648,8 +615,8 @@
                         <div class="text-center mt-5">
                             <img src="assets/images/client/02.jpg" class="size-14 rounded-full shadow-md mx-auto"
                                  alt="">
-                            <h6 class="mt-2 font-semibold">Ramya</h6>
-                            <span class="text-slate-400 text-sm">Flat tenant</span>
+                            <h6 class="mt-2 font-semibold">Christa Smith</h6>
+                            <span class="text-slate-400 text-sm">Manager</span>
                         </div>
                     </div>
                 </div>
@@ -658,8 +625,8 @@
                     <div class="cursor-e-resize">
                         <div class="content relative rounded shadow dark:shadow-gray-800 m-2 p-6 bg-white dark:bg-slate-900 before:content-[''] before:absolute before:start-1/2 before:-bottom-[4px] before:box-border before:border-8 before:rotate-[45deg] before:border-t-transparent before:border-e-white dark:before:border-e-slate-900 before:border-b-white dark:before:border-b-slate-900 before:border-s-transparent before:shadow-testi dark:before:shadow-gray-700 before:origin-top-left">
                             <i class="mdi mdi-format-quote-open mdi-48px text-red-500"></i>
-                            <p class="text-slate-400">" The financial management tools are fantastic. Keeping track of
-                                expenses and payments has never been easier!. "</p>
+                            <p class="text-slate-400">" One disadvantage of Lorum Ipsum is that in Latin certain letters
+                                appear more frequently than others. "</p>
                             <ul class="list-none mb-0 text-amber-400 mt-3">
                                 <li class="inline"><i class="mdi mdi-star"></i></li>
                                 <li class="inline"><i class="mdi mdi-star"></i></li>
@@ -672,8 +639,8 @@
                         <div class="text-center mt-5">
                             <img src="assets/images/client/03.jpg" class="size-14 rounded-full shadow-md mx-auto"
                                  alt="">
-                            <h6 class="mt-2 font-semibold">Malik</h6>
-                            <span class="text-slate-400 text-sm">Flat Owner</span>
+                            <h6 class="mt-2 font-semibold">Jemina CLone</h6>
+                            <span class="text-slate-400 text-sm">Manager</span>
                         </div>
                     </div>
                 </div>
@@ -682,8 +649,8 @@
                     <div class="cursor-e-resize">
                         <div class="content relative rounded shadow dark:shadow-gray-800 m-2 p-6 bg-white dark:bg-slate-900 before:content-[''] before:absolute before:start-1/2 before:-bottom-[4px] before:box-border before:border-8 before:rotate-[45deg] before:border-t-transparent before:border-e-white dark:before:border-e-slate-900 before:border-b-white dark:before:border-b-slate-900 before:border-s-transparent before:shadow-testi dark:before:shadow-gray-700 before:origin-top-left">
                             <i class="mdi mdi-format-quote-open mdi-48px text-red-500"></i>
-                            <p class="text-slate-400">" Sharing photos and updates with the community is seamless. The
-                                gallery feature keeps everyone engaged and informed. "</p>
+                            <p class="text-slate-400">" Thus, Lorem Ipsum has only limited suitability as a visual
+                                filler for German texts. "</p>
                             <ul class="list-none mb-0 text-amber-400 mt-3">
                                 <li class="inline"><i class="mdi mdi-star"></i></li>
                                 <li class="inline"><i class="mdi mdi-star"></i></li>
@@ -696,8 +663,8 @@
                         <div class="text-center mt-5">
                             <img src="assets/images/client/04.jpg" class="size-14 rounded-full shadow-md mx-auto"
                                  alt="">
-                            <h6 class="mt-2 font-semibold">Lakshmi</h6>
-                            <span class="text-slate-400 text-sm">Flat Owner</span>
+                            <h6 class="mt-2 font-semibold">Smith Vodka</h6>
+                            <span class="text-slate-400 text-sm">Manager</span>
                         </div>
                     </div>
                 </div>
@@ -706,8 +673,8 @@
                     <div class="cursor-e-resize">
                         <div class="content relative rounded shadow dark:shadow-gray-800 m-2 p-6 bg-white dark:bg-slate-900 before:content-[''] before:absolute before:start-1/2 before:-bottom-[4px] before:box-border before:border-8 before:rotate-[45deg] before:border-t-transparent before:border-e-white dark:before:border-e-slate-900 before:border-b-white dark:before:border-b-slate-900 before:border-s-transparent before:shadow-testi dark:before:shadow-gray-700 before:origin-top-left">
                             <i class="mdi mdi-format-quote-open mdi-48px text-red-500"></i>
-                            <p class="text-slate-400">" Automated monthly transaction summaries are a huge plus. They
-                                save me time and keep everything organized. "</p>
+                            <p class="text-slate-400">" There is now an abundance of readable dummy texts. These are
+                                usually used when a text is required. "</p>
                             <ul class="list-none mb-0 text-amber-400 mt-3">
                                 <li class="inline"><i class="mdi mdi-star"></i></li>
                                 <li class="inline"><i class="mdi mdi-star"></i></li>
@@ -720,8 +687,8 @@
                         <div class="text-center mt-5">
                             <img src="assets/images/client/05.jpg" class="size-14 rounded-full shadow-md mx-auto"
                                  alt="">
-                            <h6 class="mt-2 font-semibold">Guru</h6>
-                            <span class="text-slate-400 text-sm">Flat Owner</span>
+                            <h6 class="mt-2 font-semibold">Cristino Murfi</h6>
+                            <span class="text-slate-400 text-sm">Manager</span>
                         </div>
                     </div>
                 </div>
@@ -730,8 +697,8 @@
                     <div class="cursor-e-resize">
                         <div class="content relative rounded shadow dark:shadow-gray-800 m-2 p-6 bg-white dark:bg-slate-900 before:content-[''] before:absolute before:start-1/2 before:-bottom-[4px] before:box-border before:border-8 before:rotate-[45deg] before:border-t-transparent before:border-e-white dark:before:border-e-slate-900 before:border-b-white dark:before:border-b-slate-900 before:border-s-transparent before:shadow-testi dark:before:shadow-gray-700 before:origin-top-left">
                             <i class="mdi mdi-format-quote-open mdi-48px text-red-500"></i>
-                            <p class="text-slate-400">" The simple and beautiful interface makes navigation a joy.
-                                Everything is well-organized and easy to access. "</p>
+                            <p class="text-slate-400">" According to most sources, Lorum Ipsum can be traced back to a
+                                text composed by Cicero. "</p>
                             <ul class="list-none mb-0 text-amber-400 mt-3">
                                 <li class="inline"><i class="mdi mdi-star"></i></li>
                                 <li class="inline"><i class="mdi mdi-star"></i></li>
@@ -744,8 +711,8 @@
                         <div class="text-center mt-5">
                             <img src="assets/images/client/06.jpg" class="size-14 rounded-full shadow-md mx-auto"
                                  alt="">
-                            <h6 class="mt-2 font-semibold">Ganesh</h6>
-                            <span class="text-slate-400 text-sm">Flat Owner</span>
+                            <h6 class="mt-2 font-semibold">Cristino Murfi</h6>
+                            <span class="text-slate-400 text-sm">Manager</span>
                         </div>
                     </div>
                 </div>
@@ -758,43 +725,65 @@
 <!-- Start -->
 <section class="relative md:py-24 py-16 bg-slate-50/50 dark:bg-slate-800/20" id="contact">
     <div class="container relative">
-        <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-6">
+        <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
             <div class="lg:col-span-7 md:col-span-6">
                 <img src="assets/images/contact.svg" alt="">
             </div>
 
-            <div class="lg:col-span-5 md:col-span-6 text-center">
+            <div class="lg:col-span-5 md:col-span-6">
                 <div class="lg:ms-5">
                     <div class="bg-white dark:bg-slate-900 rounded-md shadow dark:shadow-gray-800 p-6">
                         <h6 class="text-red-500 uppercase text-sm font-bold tracking-wider mb-3">Contact Us</h6>
                         <h4 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-bold">Get in touch
                             !</h4>
 
-                        <div class="flex justify-center">
+                        <form method="post" name="myForm" id="myForm" onsubmit="return validateForm()">
+                            <p class="mb-0" id="error-msg"></p>
+                            <div id="simple-msg"></div>
                             <div class="grid lg:grid-cols-12 gap-3">
+                                <div class="lg:col-span-6">
+                                    <div class="text-start">
+                                        <label for="name" class="font-medium">Your Name:</label>
+                                        <input name="name" id="name" type="text"
+                                               class="form-input mt-1 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 focus:border-red-500 dark:border-gray-800 dark:focus:border-red-500 focus:ring-0"
+                                               placeholder="Name :">
+                                    </div>
+                                </div>
+
+                                <div class="lg:col-span-6">
+                                    <div class="text-start">
+                                        <label for="email" class="font-medium">Your Email:</label>
+                                        <input name="email" id="email" type="email"
+                                               class="form-input mt-1 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 focus:border-red-500 dark:border-gray-800 dark:focus:border-red-500 focus:ring-0"
+                                               placeholder="Email :">
+                                    </div>
+                                </div>
                                 <div class="lg:col-span-12">
-                                    <div class="text-center">
-                                        <label class="font-medium">Email:</label>
-                                        <label class="font-medium">info@aptnest.com</label>
+                                    <div class="text-start">
+                                        <label for="subject" class="font-medium">Your Question:</label>
+                                        <input name="subject" id="subject"
+                                               class="form-input mt-1 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 focus:border-red-500 dark:border-gray-800 dark:focus:border-red-500 focus:ring-0"
+                                               placeholder="Subject :">
                                     </div>
                                 </div>
 
                                 <div class="lg:col-span-12">
-                                    <div class="text-center">
-                                        <label class="font-medium">Phone:</label>
-                                        <label class="font-medium">+91 8338 48989</label>
+                                    <div class="text-start">
+                                        <label for="comments" class="font-medium">Your Comment:</label>
+                                        <textarea name="comments" id="comments"
+                                                  class="form-input mt-1 w-full py-2 px-3 h-28 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 focus:border-red-500 dark:border-gray-800 dark:focus:border-red-500 focus:ring-0"
+                                                  placeholder="Message :"></textarea>
                                     </div>
                                 </div>
-                                <div class="lg:col-span-12 my-5">
-                                    <div class="text-center">
-                                        <p class="my-2">
-                                            <span class="text-red-500">New to the app?</span> <br/>
-                                            Just email your name and apartment address to <span class="text-blue-500">info@aptnest.com</span>, and we’ll quickly set up your access.
-                                        </p>
-                                    </div>
+
+                                <div class="lg:col-span-12">
+                                    <button type="submit" id="submit" name="send"
+                                            class="py-2 px-5 tracking-wider inline-flex items-center justify-center font-medium rounded bg-red-500 text-white">
+                                        Send Message
+                                    </button>
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -803,40 +792,76 @@
 </section><!--end section-->
 <!-- End -->
 
+<!-- Business Partner -->
+<section class="py-6 border-t border-b border-gray-100 dark:border-gray-800">
+    <div class="container relative">
+        <div class="grid md:grid-cols-6 grid-cols-2 justify-center gap-[30px]">
+            <div class="mx-auto py-4">
+                <img src="assets/images/client/amazon.svg" class="h-6" alt="">
+            </div>
+
+            <div class="mx-auto py-4">
+                <img src="assets/images/client/google.svg" class="h-6" alt="">
+            </div>
+
+            <div class="mx-auto py-4">
+                <img src="assets/images/client/lenovo.svg" class="h-6" alt="">
+            </div>
+
+            <div class="mx-auto py-4">
+                <img src="assets/images/client/paypal.svg" class="h-6" alt="">
+            </div>
+
+            <div class="mx-auto py-4">
+                <img src="assets/images/client/shopify.svg" class="h-6" alt="">
+            </div>
+
+            <div class="mx-auto py-4">
+                <img src="assets/images/client/spotify.svg" class="h-6" alt="">
+            </div>
+        </div><!--end grid-->
+    </div><!--end container-->
+</section><!--end section-->
+<!-- Business Partner -->
 
 <!-- Start Footer -->
 <footer class="py-8 bg-slate-800 dark:bg-gray-900">
     <div class="container">
         <div class="grid md:grid-cols-12 items-center">
-            <div class="md:col-span-6 flex flex-col items-center">
+            <div class="md:col-span-3">
                 <a href="#" class="logo-footer">
-                    <img src="assets/images/logo-light.png" class="md:ms-0 h-8 md:me-8 mx-auto" alt="">
+                    <img src="assets/images/logo-light.png" class="md:ms-0 mx-auto" alt="">
                 </a>
-                <div class="flex gap-2 text-gray-400">
-                    <a href="/privacy-policy.html" target="_blank" class="logo-footer">
-                        Privacy Policy
-                    </a>|
-                    <a href="/terms-and-conditions.html" target="_blank" class="logo-footer">
-                        Terms and Conditions
-                    </a>
+            </div>
+
+            <div class="md:col-span-5 md:mt-0 mt-8">
+                <div class="text-center">
+                    <p class="text-gray-400">© <script>document.write(new Date().getFullYear())</script> AptNest. Design with <i class="mdi mdi-heart text-red-700"></i> by <a href="https://shreethemes.in/" target="_blank" class="text-reset">LEXIOT</a>.</p>
                 </div>
             </div>
 
-            <div class="md:col-span-6 md:mt-0 mt-8">
-                <div class="flex flex-col items-center justify-center md:justify-end">
-                    <p class="text-gray-400">© <script>document.write(new Date().getFullYear())</script> AptNest. Design with <i class="mdi mdi-heart text-red-700"></i> by <a href="https://shreethemes.in/" target="_blank" class="text-reset">LEXIOT</a>.</p>
-                 </div>
-            </div>
+            <div class="md:col-span-4 md:mt-0 mt-8">
+                <ul class="list-none foot-icon ltr:md:text-right rtl:md:text-left text-center">
+                    <li class="inline"><a href="https://1.envato.market/appever" target="_blank" class="size-8 inline-flex items-center justify-center tracking-wide align-middle text-base border border-gray-700 hover:border-red-500 rounded-md text-slate-300 hover:text-white hover:bg-red-500"><i data-feather="shopping-cart" class="h-4 w-4 align-middle" title="Buy Now"></i></a></li>
+                    <li class="inline"><a href="https://dribbble.com/shreethemes" target="_blank" class="size-8 inline-flex items-center justify-center tracking-wide align-middle text-base border border-gray-700 hover:border-red-500 rounded-md text-slate-300 hover:text-white hover:bg-red-500"><i data-feather="dribbble" class="h-4 w-4 align-middle" title="dribbble"></i></a></li>
+                    <li class="inline"><a href="http://linkedin.com/company/shreethemes" target="_blank" class="size-8 inline-flex items-center justify-center tracking-wide align-middle text-base border border-gray-700 hover:border-red-500 rounded-md text-slate-300 hover:text-white hover:bg-red-500"><i data-feather="linkedin" class="h-4 w-4 align-middle" title="Linkedin"></i></a></li>
+                    <li class="inline"><a href="https://www.facebook.com/shreethemes" target="_blank" class="size-8 inline-flex items-center justify-center tracking-wide align-middle text-base border border-gray-700 hover:border-red-500 rounded-md text-slate-300 hover:text-white hover:bg-red-500"><i data-feather="facebook" class="h-4 w-4 align-middle" title="facebook"></i></a></li>
+                    <li class="inline"><a href="https://www.instagram.com/shreethemes/" target="_blank" class="size-8 inline-flex items-center justify-center tracking-wide align-middle text-base border border-gray-700 hover:border-red-500 rounded-md text-slate-300 hover:text-white hover:bg-red-500"><i data-feather="instagram" class="h-4 w-4 align-middle" title="instagram"></i></a></li>
+                    <li class="inline"><a href="https://twitter.com/shreethemes" target="_blank" class="size-8 inline-flex items-center justify-center tracking-wide align-middle text-base border border-gray-700 hover:border-red-500 rounded-md text-slate-300 hover:text-white hover:bg-red-500"><i data-feather="twitter" class="h-4 w-4 align-middle" title="twitter"></i></a></li>
+                    <li class="inline"><a href="mailto:support@shreethemes.in" class="size-8 inline-flex items-center justify-center tracking-wide align-middle text-base border border-gray-700 hover:border-red-500 rounded-md text-slate-300 hover:text-white hover:bg-red-500"><i data-feather="mail" class="h-4 w-4 align-middle" title="email"></i></a></li>
+                </ul><!--end icon-->
+            </div><!--end col-->
         </div><!--end row-->
     </div><!--end container-->
 </footer><!--end footer-->
 <!-- End Footer -->
 
 <!-- Back to top -->
-<a onclick="topFunction()" id="back-to-top"
-   class="back-to-top fixed hidden text-lg rounded-full z-10 bottom-5 end-5 h-9 w-9 text-center bg-red-500 text-white leading-9 cursor-pointer"><i
+<a href="#" onclick="topFunction()" id="back-to-top"
+   class="back-to-top fixed hidden text-lg rounded-full z-10 bottom-5 end-5 h-9 w-9 text-center bg-red-500 text-white leading-9"><i
         class="mdi mdi-arrow-up"></i></a>
 <!-- Back to top -->
+
 
 
 <!-- JAVASCRIPTS -->
