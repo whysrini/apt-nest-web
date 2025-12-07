@@ -1,89 +1,13 @@
-<!DOCTYPE html>
-<html lang="en" class="dark scroll-smooth" dir="ltr">
+@@include("partials/main.html")
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AptNest - Apartment Management App - The Key to Simplifying Your Apartment Experience.</title>
-    <meta name="description" content="Apt Nest offers a complete apartment management solution. From financial oversight to photo sharing and community news, our app provides everything you need for modern apartment living.">
-    <meta name="keywords" content="apartment management, apartment community app, apartment finances, apartment photo sharing, apartment events, apartment news, community connection, tenant management, apartment living, apartment app, home management, property management app, apartment community features, financial management for apartments, apartment community updates">
-    <meta name="author" content="LEXIOT">
-    <meta name="website" content="https://aptnext.com">
-    <meta name="email" content="support@aptnest.com">
-    <meta name="version" content="1..0">
-    <!-- favicon -->
-    <link href="assets/images/favicon.ico" rel="shortcut icon">
+    @@include("partials/title-meta.html", {"title": "AptNest - Apartment Management App"})
     <!-- Css -->
-    <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
-    <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
-    <link href="assets/libs/@mdi/font/css/materialdesignicons.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="assets/css/tailwind.css">
+    @@include("partials/head-css.html")
 </head>
 
-<body class="font-roboto text-base text-slate-900 dark:text-white dark:bg-slate-900">
-    <!-- Loader Start -->
-    <!-- <div id="preloader">
-        <div id="status">
-            <div class="logo">
-                <img src="assets/images/logo-icon-64.png" class="d-block mx-auto animate-[spin_10s_linear_infinite]" alt="">
-            </div>
-            <div class="justify-content-center">
-                <div class="text-center">
-                    <h4 class="mb-0 mt-2 text-lg font-semibold">Appever</h4>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Loader End -->
+@@include("partials/body.html")
 
-
-<!-- Navbar Start -->
-<nav class="navbar" id="navbar">
-    <div class="container relative flex flex-wrap items-center justify-between">
-        <a class="navbar-brand md:me-8" href="/">
-            <img src="assets/images/logo-dark.png" class="h-5 inline-block dark:hidden" alt="">
-            <img src="assets/images/logo-light.png" class="h-5 hidden dark:inline-block" alt="">
-        </a>
-
-        <div class="nav-icons flex items-center lg_992:order-2 md:ms-6">
-            <!-- Navbar Collapse Manu Button -->
-            <button data-collapse="menu-collapse" type="button" class="collapse-btn inline-flex items-center ms-2 text-slate-900 dark:text-white lg_992:hidden" aria-controls="menu-collapse" aria-expanded="false">
-                <span class="sr-only">Navigation Menu</span>
-                <i class="mdi mdi-menu text-[24px]"></i>
-            </button>
-        </div>
-
-        <!-- Navbar Manu -->
-        <div class="navigation lg_992:order-1 lg_992:flex hidden" id="menu-collapse">
-            <ul class="navbar-nav" id="navbar-navlist">
-                <li class="nav-item">
-                    <a class="nav-link active" data-id="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link cursor-pointer" data-id="#features">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link cursor-pointer" data-id="#screenshot">Application</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link cursor-pointer" data-id="#faqs">FAQs</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link cursor-pointer" data-id="#download">Download</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link cursor-pointer" data-id="#reviews">Reviews</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/help.html" target="_blank" class="nav-link cursor-pointer" >Help</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link cursor-pointer" data-id="#contact">Contact us</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<!-- Navbar End -->
+@@include("partials/navbar/nav.html")
 
 <!-- Start Hero -->
 <section
@@ -548,7 +472,7 @@
                     <div class="flex flex-col items-center justify-center gap-3 mt-3">
                         <div class="flex flex-col md:flex-row items-center justify-center gap-5">
                             <div class="flex flex-col items-center justify-center gap-2">
-                                <a href="https://apps.apple.com/us/app/aptnest/id6569243940" target="_blank">
+                                <a href="https://apps.apple.com/in/app/aptnest/id6569243940" target="_blank">
                                     <img alt="Get AptNest on the App store"
                                          class="h-12 inline-block m-1"
                                          src="assets/images/download_on_the_App_Store.svg">
@@ -804,33 +728,7 @@
 <!-- End -->
 
 
-<!-- Start Footer -->
-<footer class="py-8 bg-slate-800 dark:bg-gray-900">
-    <div class="container">
-        <div class="grid md:grid-cols-12 items-center">
-            <div class="md:col-span-6 flex flex-col items-center">
-                <a href="#" class="logo-footer">
-                    <img src="assets/images/logo-light.png" class="md:ms-0 h-8 md:me-8 mx-auto" alt="">
-                </a>
-                <div class="flex gap-2 text-gray-400">
-                    <a href="/privacy-policy.html" target="_blank" class="logo-footer">
-                        Privacy Policy
-                    </a>|
-                    <a href="/terms-and-conditions.html" target="_blank" class="logo-footer">
-                        Terms and Conditions
-                    </a>
-                </div>
-            </div>
-
-            <div class="md:col-span-6 md:mt-0 mt-8">
-                <div class="flex flex-col items-center justify-center md:justify-end">
-                    <p class="text-gray-400">© <script>document.write(new Date().getFullYear())</script> AptNest. Design with <i class="mdi mdi-heart text-red-700"></i> by <a href="https://shreethemes.in/" target="_blank" class="text-reset">LEXIOT</a>.</p>
-                 </div>
-            </div>
-        </div><!--end row-->
-    </div><!--end container-->
-</footer><!--end footer-->
-<!-- End Footer -->
+@@include("partials/footer/footer-no-social.html")
 
 <!-- Back to top -->
 <a onclick="topFunction()" id="back-to-top"
@@ -841,11 +739,7 @@
 
 <!-- JAVASCRIPTS -->
 <script src="assets/libs/feather-icons/feather.min.js"></script>
-<script src="assets/libs/gumshoejs/gumshoe.polyfills.min.js"></script>
-<script src="assets/libs/tobii/js/tobii.min.js"></script>
-<script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
-<script src="assets/js/plugins.init.js"></script>
-<script src="assets/js/app.js"></script>
+@@include("partials/script-file.html")
 <!-- JAVASCRIPTS -->
 </body>
 </html>
